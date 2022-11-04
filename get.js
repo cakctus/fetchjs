@@ -184,7 +184,7 @@ class Movie {
         this.clearmarkUp(document.getElementById("movies"))
         document.getElementById("movie-select").value = "default"
         if (searchString.length > 1 && searchString !== "") {
-          fetch(`http://www.omdbapi.com/?apikey=86b4ca13&s=${searchString}`)
+          fetch(`https://www.omdbapi.com/?apikey=86b4ca13&s=${searchString}`)
             .then((response) => response)
             .then((r) => r.json())
             .then((r) => {
