@@ -10,7 +10,7 @@ class Movie {
   }
 
   promise(url) {
-    fetch(url ? url : `http://www.omdbapi.com/?apikey=86b4ca13&s=terminator`)
+    fetch(url ? url : `https://www.omdbapi.com/?apikey=86b4ca13&s=terminator`)
       .then((response) => response)
       .then((r) => r.json())
       .then((r) => {
@@ -19,7 +19,7 @@ class Movie {
       })
 
     return fetch(
-      url ? url : `http://www.omdbapi.com/?apikey=86b4ca13&s=terminator`
+      url ? url : `https://www.omdbapi.com/?apikey=86b4ca13&s=terminator`
     )
   }
 
